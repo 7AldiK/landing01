@@ -33,7 +33,7 @@ p {
 }
 
 .line {
-    width: 90px;
+    max-width: 90px;
     border-width: 2px;
     position: relative;
     z-index: 1000;
@@ -43,7 +43,8 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1544px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /*---Header---*/
@@ -58,7 +59,7 @@ header {
 }
 
 .header__inner {
-    padding: 55px 225px;
+    padding: 57px 217px 133px 211px;
     background: #87509C;
     display: flex;
     justify-content: space-between;
@@ -74,8 +75,9 @@ header {
 .nav__link {
     color: #fff;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 8px;
     transition: background 0.1s linear;
+    padding: 5px 10px;
 }
 
 .nav__link:first-child{
@@ -85,7 +87,6 @@ header {
 .nav__link:hover {
     background-color: #643A79;
     border-radius: 6px;
-    padding: 5px 20px;
 }
 
 .nav__link:visited {
@@ -96,7 +97,7 @@ header {
 
 .intro {
     background-color: #87509C;
-    height: 600px;
+    height: 596px;
     padding-top: 95px;
     display: flex;
     flex-direction: column;
@@ -106,7 +107,8 @@ header {
 .intro__inner {
     margin: 0 auto;
     width: 100%;
-    max-width: 910px;
+    max-width: 908px;
+    max-height: 224px;
     text-align: center;
 }
 
@@ -116,7 +118,7 @@ header {
     font-weight: 700;
     color: #F7F3EA;
     text-indent: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 /*---Button---*/
@@ -124,18 +126,17 @@ header {
 .btn {
     display: inline-block;
     vertical-align: top;
-    padding-top: 30px;
-    padding-bottom: 25px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 22px 83px 20px 81px;
 
-    border-radius: 6px;
+    border-radius: 5px;
 
     font-size: 18px;
+    line-height: 1.5;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    
 
     transition: background 0.1s linear;
 }
@@ -153,20 +154,21 @@ header {
 
 .services {
     background-color: #17C2A4;
-    height: 750px;
+    height: 747px;
     width: 100%;
 }
 
 .services__inner {
     margin: 0 auto;
     max-width: 1050px;
-    max-height: 520px;
+    max-height: 518.5px;
     width: 100%;
     text-align: center;
+    margin-bottom: 122px;
 }
 
 .services__title {
-    padding-top: 110px;
+    padding-top: 106px;
     margin-bottom: 25px;
 
     color: #fff;
@@ -191,7 +193,7 @@ header {
 
 .features {
     width: 25%;
-    margin-right: 110px;
+    margin-right: 111px;
 }
 
 .features:last-child {
@@ -207,6 +209,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 37px;
+    margin-bottom: 13px;
 
     color: #fff;
 }
@@ -234,10 +237,11 @@ header {
     max-width: 1040px;
     max-height: 680px;
     text-align: center;
+    margin-bottom: 126px;
 }
 
 .team__title {
-    padding-top: 105px;
+    padding-top: 107px;
     line-height: 62px;
     margin-bottom: 25px;
 }
@@ -249,7 +253,7 @@ header {
 
 .team__subtitle {
     line-height: 28px;
-    margin-bottom: 75px;
+    margin-bottom: 74px;
 }
 
 .team__members-row {
@@ -270,7 +274,7 @@ header {
     max-width: 100%;
     height: auto;
 
-    margin-bottom: 32px;
+    margin-bottom: 34px;
 }
 
 .members__name {
@@ -285,7 +289,7 @@ header {
     font-weight: 400;
     color: #30BAE7;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .members__description {
@@ -338,15 +342,16 @@ header {
 }
 
 .skills__inner {
-    max-width: 1070px;
+    max-width: 1000px;
     max-height: 440px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 110px;
 }
 
 .skills__title {
-    padding-top: 107px;
+    padding-top: 105px;
     line-height: 61px;
     margin-bottom: 25px;
 }
@@ -363,7 +368,7 @@ header {
 
 .skills__item {
     width: 25%;
-    margin-right: 130px;
+    margin-right: 120px;
 }
 
 .skills__item:last-child {
@@ -391,14 +396,15 @@ header {
 .portfolio {
     width: 100%;
     background-color: #FFDD99;
-    height: 1425px;
+    height: 1423px;
 }
 
 .portfolio__inner {
-    max-width: 1182px;
-    max-height: 1206px;
+    max-width: 1103px;
+    max-height: 1206.5px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 109px;
 }
 
 .portfolio__title {
@@ -417,6 +423,10 @@ header {
     margin-bottom: 37px;
     line-height: 27px;
     padding: 0 26%;
+}
+
+.portfolio__categories {
+    margin-bottom: 62px;
 }
 
 .categories__item {
@@ -438,6 +448,10 @@ header {
 
 .categories__item:hover {
     background: #fff;
+}
+
+.projects {
+    display: inline-block;
 }
 
 
