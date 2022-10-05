@@ -137,7 +137,6 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     
-
     transition: background 0.1s linear;
 }
 
@@ -310,7 +309,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    width: 32px;
+    max-width: 32px;
     height: 32px;
     background-color: #BDD1DF;
     border-radius: 50%;
@@ -430,7 +429,7 @@ header {
 }
 
 .categories__item {
-    padding: 6px 30px 5px 30px;
+    padding: 6px 28px 5px 28px;
     background-color: rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     margin-right: 10px;
@@ -451,7 +450,51 @@ header {
 }
 
 .projects {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 75px;
 }
+
+.projects__icon {
+    margin-bottom: 27px;
+}
+
+.projects__item {
+    margin-bottom: 56px;
+}
+
+.projects__item:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.projects__item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.projects__item:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.projects__name {
+    font-size: 18px;
+    color: #393939;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.btn_green {
+    background-color: #17C2A4;
+    border-bottom: 4px solid rgb(20,165,140);
+    
+    padding: 22px 59px 20px 59px;
+
+    font-weight: 600;
+}
+
+.btn_green:hover {
+    background-color: #16b89a;
+}
+
 
 
